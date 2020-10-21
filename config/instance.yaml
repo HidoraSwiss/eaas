@@ -1,0 +1,19 @@
+instances:
+  - name: 'ES_HOST1'
+    dns: [ 'ES_HOST1' ]
+    ip: [ 'ES_HOST1_IP' ]
+  - name: "ES_HOST2"
+    dns: [ 'ES_HOST2' ]
+    ip: [ 'ES_HOST2_IP' ]
+  - name: 'ES_HOST3'
+    dns: [ 'ES_HOST3' ]
+    ip: [ 'ES_HOST3_IP' ]
+  - name: 'KB_HOST1'
+    dns: [ 'KB_HOST1' ]
+    ip: [ 'KB_HOST1_IP' ]
+  - name: 'LG_HOST1'
+    dns: [ 'LG_HOST1' ]
+    ip: [ 'LG_HOST1_IP' ]
+  - name: 'FB_HOST1'
+    dns: [ 'FB_HOST1' ]
+    ip: [ 'FB_HOST1_IP' ]
