@@ -1,16 +1,16 @@
 instances:
   - name: 'ES_HOST1'
     dns: [ 'ES_HOST1' ]
-    ip: [ 'ES_HOST1_IP' ]
+    ip: [ 'ES_IP_HOST1' ]
   - name: "ES_HOST2"
     dns: [ 'ES_HOST2' ]
-    ip: [ 'ES_HOST2_IP' ]
+    ip: [ 'ES_IP_HOST2' ]
   - name: 'ES_HOST3'
     dns: [ 'ES_HOST3' ]
-    ip: [ 'ES_HOST3_IP' ]
+    ip: [ 'ES_IP_HOST3' ]
   - name: 'KB_HOST1'
     dns: [ 'KB_HOST1' ]
-    ip: [ 'KB_HOST1_IP' ]
+    ip: [ 'KB_IP_HOST1' ]
   - name: 'LG_HOST1'
     dns: [ 'LG_HOST1' ]
-    ip: [ 'LG_HOST1_IP' ]
+    ip: [ 'LG_IP_HOST1' ]
