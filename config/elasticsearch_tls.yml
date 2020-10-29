@@ -90,11 +90,11 @@ cluster.initial_master_nodes: ["HOST1", "HOST2", "HOST3"]
 xpack.security.enabled: true
 
 xpack.security.transport.ssl.enabled: true
-xpack.security.transport.ssl.key: certs/HOST.key
-xpack.security.transport.ssl.certificate: certs/HOST.crt
-xpack.security.transport.ssl.certificate_authorities: [ "certs/ca.crt" ]
+xpack.security.transport.ssl.key: /data/certs/LOCAL_HOST/LOCAL_HOST.key
+xpack.security.transport.ssl.certificate: /data/certs/LOCAL_HOST/LOCAL_HOST.crt
+xpack.security.transport.ssl.certificate_authorities: [ "/data/certs/ca/ca.crt" ]
 
-xpack.security.http.ssl.enabled: true
-xpack.security.http.ssl.key: certs/HOST.key
-xpack.security.http.ssl.certificate: certs/HOST.crt
-xpack.security.http.ssl.certificate_authorities: certs/ca.crt
+#xpack.security.http.ssl.enabled: true
+#xpack.security.http.ssl.key: certs/HOST.key
+#xpack.security.http.ssl.certificate: certs/HOST.crt
+#xpack.security.http.ssl.certificate_authorities: certs/ca.crt
