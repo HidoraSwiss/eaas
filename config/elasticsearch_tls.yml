@@ -95,6 +95,6 @@ xpack.security.transport.ssl.certificate: /data/certs/cert.crt
 xpack.security.transport.ssl.certificate_authorities: [ "/data/certs/ca.crt" ]
 
 xpack.security.http.ssl.enabled: true
-xpack.security.http.ssl.key: certs/ssl.key
-xpack.security.http.ssl.certificate: certs/cert.crt
-xpack.security.http.ssl.certificate_authorities: certs/ca.crt
+xpack.security.http.ssl.key: /data/certs/ssl.key
+xpack.security.http.ssl.certificate: /data/certs/cert.crt
+xpack.security.http.ssl.certificate_authorities: /data/certs/ca.crt
