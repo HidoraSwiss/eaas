@@ -119,7 +119,11 @@ elasticsearch.hosts: ["http://HOST1", "http://HOST2", "http://HOST3"]
 #i18n.locale: "en"
 
 server.ssl.enabled: true
+
+elasticsearch.ssl.certificateAuthorities: [ "/etc/kibana/certs/ca.crt" ]
 server.ssl.certificate: /etc/kibana/certs/cert.crt
 server.ssl.key: /etc/kibana/certs/ssl.key
+elasticsearch.ssl.verificationMode: 'certificate'
+
 elasticsearch.username: "KIBANA_USER"
 elasticsearch.password: "KIBANA_PASSWORD"
