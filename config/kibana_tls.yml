@@ -6,7 +6,7 @@ server.port: KIBANA_PORT
 # The default is 'localhost', which usually means remote machines will not be able to connect.
 # To allow connections from remote users, set this parameter to a non-loopback address
 
-server.host: "KIBANA_IP"
+server.host: "KIBANA_H"
 
 # Enables you to specify a path to mount Kibana at if you are running behind a proxy.
 # Use the `server.rewriteBasePath` setting to tell Kibana if it should remove the basePath
@@ -123,7 +123,7 @@ server.ssl.enabled: true
 elasticsearch.ssl.certificateAuthorities: [ "/etc/kibana/certs/ca.crt" ]
 server.ssl.certificate: /etc/kibana/certs/cert.crt
 server.ssl.key: /etc/kibana/certs/ssl.key
-elasticsearch.ssl.verificationMode: 'certificate'
+elasticsearch.ssl.verificationMode: 'none'
 
 elasticsearch.username: "KIBANA_USER"
 elasticsearch.password: "KIBANA_PASSWORD"
