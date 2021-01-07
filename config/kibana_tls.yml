@@ -30,6 +30,8 @@ server.host: "KIBANA_H"
 
 # The URLs of the Elasticsearch instances to use for all your queries.
 elasticsearch.hosts: ["https://HOST1", "https://HOST2", "https://HOST3"]
+elasticsearch.hosts: ["https://HOST1", "https://HOST2", "https://HOST3", "https://HOST4", "https://HOST5"]
+elasticsearch.hosts: ["https://HOST1", "https://HOST2", "https://HOST3", "https://HOST4", "https://HOST5", "https://HOST6", "https://HOST7"]
 
 # When this setting's value is true Kibana uses the hostname specified in the server.host
 # setting. When the value of this setting is false, Kibana uses the hostname of the host
