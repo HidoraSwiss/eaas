@@ -66,14 +66,14 @@ http.port: ELASTICSEARCH_PORT
 # The default list of hosts is ["127.0.0.1", "[::1]"]
 #
 discovery.seed_hosts: ["HOST1", "HOST2", "HOST3"]
-#discovery.seed_hosts: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5"]
-#discovery.seed_hosts: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5", "HOST6", "HOST7"]
+discovery.seed_hosts: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5"]
+discovery.seed_hosts: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5", "HOST6", "HOST7"]
 #
 # Bootstrap the cluster using an initial set of master-eligible nodes:
 #
 cluster.initial_master_nodes: ["HOST1", "HOST2", "HOST3"]
-#cluster.initial_master_nodes: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5"]
-#cluster.initial_master_nodes: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5", "HOST6", "HOST7"]
+cluster.initial_master_nodes: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5"]
+cluster.initial_master_nodes: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5", "HOST6", "HOST7"]
 #
 # For more information, consult the discovery and cluster formation module documentation.
 #
