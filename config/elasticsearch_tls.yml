@@ -74,6 +74,8 @@ discovery.seed_hosts: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5", "HOST6", "HO
 cluster.initial_master_nodes: ["HOST1", "HOST2", "HOST3"]
 cluster.initial_master_nodes: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5"]
 cluster.initial_master_nodes: ["HOST1", "HOST2", "HOST3", "HOST4", "HOST5", "HOST6", "HOST7"]
+node.roles: [ master ]
+node.roles: [data,ingest] #data_content,data_hot
 #
 # For more information, consult the discovery and cluster formation module documentation.
 #
