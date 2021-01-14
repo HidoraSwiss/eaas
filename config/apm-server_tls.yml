@@ -661,7 +661,7 @@ output.elasticsearch:
   ssl.certificate: "/etc/apm-server/certs/cert.crt"
 
   # Client Certificate Key
-  ssl.key: "/etc/elasticsearch/certs/ssl.key"
+  ssl.key: "/etc/apm-server/certs/ssl.key"
 
   # Optional passphrase for decrypting the Certificate Key.
   # It is recommended to use the provided keystore instead of entering the passphrase in plain text.
