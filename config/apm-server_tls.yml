@@ -122,7 +122,7 @@ apm-server:
     # browser configured certificates and Jaeger agents connecting via gRPC.
     #
     # Configure a list of root certificate authorities for verifying client certificates.
-    certificate_authorities: [/etc/elasticsearch/certs/ca.crt]
+    certificate_authorities: [/etc/apm-server/certs/ca.crt]
     #
     # Configure which type of client authentication is supported.
     # Options are `none`, `optional`, and `required`.
