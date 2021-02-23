@@ -23,7 +23,7 @@ server.host: "KIBANA_IP"
 #server.rewriteBasePath: false
 
 # The maximum payload size in bytes for incoming server requests.
-#server.maxPayloadBytes: 1048576
+server.maxPayloadBytes: 2097152
 
 # The Kibana server's name.  This is used for display purposes.
 #server.name: "your-hostname"
