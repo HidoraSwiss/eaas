@@ -97,11 +97,9 @@ opendistro_security.ssl.transport.pemkey_filepath: /etc/elasticsearch/certs/ssl.
 opendistro_security.ssl.transport.pemcert_filepath: /etc/elasticsearch/certs/cert.crt
 opendistro_security.ssl.transport.pemtrustedcas_filepath: /etc/elasticsearch/certs/ca.crt
 opendistro_security.ssl.transport.enforce_hostname_verification: false
-
 opendistro_security.ssl.http.enabled: true
 opendistro_security.ssl.http.pemkey_filepath: /etc/elasticsearch/certs/ssl.key
 opendistro_security.ssl.http.pemcert_filepath: /etc/elasticsearch/certs/cert.crt
 opendistro_security.ssl.http.pemtrustedcas_filepath: /etc/elasticsearch/certs/ca.crt
-
 opendistro_security.nodes_dn: '*.hidora.com'
 opendistro_security.allow_default_init_securityindex: true
