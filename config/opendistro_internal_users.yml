@@ -11,19 +11,19 @@ _meta:
 ## Demo users
 
 admin:
-  hash: "ADMIN_PASSWORD"
+  hash: "ADMIN_HASH"
   reserved: true
   backend_roles:
   - "admin"
   description: "admin user"
 
 kibanaserver:
-  hash: "KIBANASERVER_PASSWORD"
+  hash: "KIBANASERVER_HASH"
   reserved: true
   description: "kibanaserver user"
 
 kibanaro:
-  hash: "KIBANARO_PASSWORD"
+  hash: "KIBANARO_HASH"
   reserved: false
   backend_roles:
   - "kibanauser"
@@ -33,21 +33,21 @@ kibanaro:
   description: "kibanaro user"
 
 logstash:
-  hash: "LOGSTASH_PASSWORD"
+  hash: "LOGSTASH_HASH"
   reserved: false
   backend_roles:
   - "logstash"
   description: "logstash user"
 
 readall:
-  hash: "READALL_PASSWORD"
+  hash: "READALL_HASH"
   reserved: false
   backend_roles:
   - "readall"
   description: "readall user"
 
 snapshotrestore:
-  hash: "SNAPSHOTRESTORE_PASSWORD"
+  hash: "SNAPSHOTRESTORE_HASH"
   reserved: false
   backend_roles:
   - "snapshotrestore"
