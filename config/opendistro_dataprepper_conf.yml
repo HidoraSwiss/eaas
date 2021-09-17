@@ -1,0 +1,5 @@
+ssl: false
+#keyStoreFilePath: "/data-prepper/keystore.jks"
+#keyStorePassword: "password"
+#privateKeyPassword: "other_password"
+#serverPort: 1234
