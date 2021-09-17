@@ -1,0 +1,43 @@
+entry-pipeline:
+  delay: "100"
+  source:
+    otel_trace_source:
+      ssl: false
+  sink:
+    - pipeline:
+        name: "raw-pipeline"
+    - pipeline:
+        name: "service-map-pipeline"
+raw-pipeline:
+  source:
+    pipeline:
+      name: "entry-pipeline"
+  prepper:
+    - otel_trace_raw_prepper:
+  sink:
+    - elasticsearch:
+        hosts: ["https://HOST1", "https://HOST2", "https://HOST3"]
+        hosts: ["https://HOST1", "https://HOST2", "https://HOST3", "https://HOST4", "https://HOST5"]
+        hosts: ["https://HOST1", "https://HOST2", "https://HOST3", "https://HOST4", "https://HOST5", "https://HOST6", "https://HOST7"]
+        trace_analytics_raw: true
+        cert: "/data/certs/ca.crt"
+        insecure: true
+        username: "ELASTICSEARCH_ADMIN"
+        password: "PASSWORD_ELASTICSEARCH_ADMIN"     
+service-map-pipeline:
+  delay: "100"
+  source:
+    pipeline:
+      name: "entry-pipeline"
+  prepper:
+    - service_map_stateful:
+  sink:
+    - elasticsearch:
+        hosts: ["https://HOST1", "https://HOST2", "https://HOST3"]
+        hosts: ["https://HOST1", "https://HOST2", "https://HOST3", "https://HOST4", "https://HOST5"]
+        hosts: ["https://HOST1", "https://HOST2", "https://HOST3", "https://HOST4", "https://HOST5", "https://HOST6", "https://HOST7"]
+        trace_analytics_service_map: true
+        cert: "/data/certs/ca.crt"
+        insecure: true
+        username: "ELASTICSEARCH_ADMIN"
+        password: "PASSWORD_ELASTICSEARCH_ADMIN"
